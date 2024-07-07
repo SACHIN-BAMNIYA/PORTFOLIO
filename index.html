@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#">Skills</a></li> -->
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+          <li><a href="."><h1>SACHiN</h1></a></li>
+          <li class="hideOnMobile"><a href="#home">Home</a></li>
+          <li class="hideOnMobile"><a href="#about">About</a></li>
+          <!-- <li class="hideOnMobile"><a href="#">Skills</a></li> -->
+          <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+          <li class="hideOnMobile"><a href="#resume">Resume</a></li>
+          <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+    
+      <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
+
+    <div class="banner" id="home">
+        <div class="slider" style="--quantity: 10">
+            <div class="items" style="--position: 1"><img src="img/herokulogo.png" alt=""></div>
+            <div class="items" style="--position: 2"><img src="img/htmllogo.png" alt="" srcset=""></div>
+            <div class="items" style="--position: 3"><img src="img/csslogo.png" alt="" srcset=""></div>
+            <div class="items" style="--position: 4"><img src="img/jslogo.png" alt="" srcset=""></div>
+            <div class="items" style="--position: 5"><img src="img/mongologo.png" alt="" srcset=""></div>
+            <div class="items" style="--position: 6"><img src="img/nodejslogo.png" alt="" srcset=""></div>
+            <div class="items" style="--position: 7"><img src="img/amazonawslogo.png" alt="" srcset=""></div>            
+            <div class="items" style="--position: 8"><img src="img/restapilogo.png" alt="" srcset=""></div>
+            <div class="items" style="--position: 9"><img src="img/figmalogo.png" alt="" srcset=""></div>
+            <div class="items" style="--position: 10"><img src="img/gitlogo.png" alt="" srcset=""></div>
+        </div>
+    </div>
+    <div class="model"><img src="img/BOYpngdone.png" alt=""></div>
+    <div class="gradient-overlay"></div>
+            <!-- ABOUT -->
+            <!-- <div style="margin-top: +12vh;"></div> -->
+        <div class="about" id="about">
+            <div class="contain">
+                <h2>About <span>Me</span></h2>
+                <p>I am a passionate web developer with expertise in front-end development. My goal is to create responsive and user-friendly websites that provide an excellent user experience.</p>
+                <div class="skill">
+                    <h3>Skills</h3>
+                    <div class="skills-cards">
+                        <div class="skill-card">
+                            <li>HTML5</li>
+                        </div>
+                        <div class="skill-card">
+                            <li>CSS3</li>
+                        </div>
+                        <div class="skill-card">
+                            <li>JavaScript</li>
+                        </div>
+                        <div class="skill-card">
+                            <li>React</li>
+                        </div>
+                        <div class="skill-card">
+                            <li>Python</li>
+                        </div>
+                        <div class="skill-card">
+                            <li>C/C++</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- PROJECTS -->
+ <!-- Projects Section -->
+ <div class="projects" id="projects">
+  <h2>Projects</h2>
+  <div class="container">
+      <div class="project-cards">
+        <div class="project-cards">
+          <!-- Project Card 1 -->
+          <div class="project-card">
+              <img src="img/mernblogpic.png" alt="Project 1">
+              <div class="project-info">
+                  <h3>MERN Blog Platform</h3>
+                  <p>A full-featured blog platform with user authentication, comments & likes built using the MERN stack.</p>
+                  <a href="#" class="btn">View Project</a>
+              </div>
+          </div>
+      
+          <!-- Project Card 2 -->
+          <div class="project-card">
+              <img src="img/ecommersepic.png" alt="Project 2">
+              <div class="project-info">
+                  <h3>E-commerce Store</h3>
+                  <p>An e-commerce store with product listings, a shopping cart, and payment gateway integration.</p>
+                  <a href="#" class="btn">View Project</a>
+              </div>
+          </div>
+      
+          <!-- Project Card 3 -->
+          <div class="project-card">
+              <img src="img/chatapp.png" alt="Project 3">
+              <div class="project-info">
+                  <h3>Chat Application</h3>
+                  <p>A real-time chat application with user authentication, private messaging, and group chats.</p>
+                  <a href="#" class="btn">View Project</a>
+              </div>
+          </div>
+      
+          <!-- Project Card 4 -->
+          <div class="project-card">
+              <img src="img/taskapp.png" alt="Project 4">
+              <div class="project-info">
+                  <h3>Task Manager</h3>
+                  <p>A task management application to organize and prioritize tasks with due dates and reminders.</p>
+                  <a href="#" class="btn">View Project</a>
+              </div>
+          </div>
+      
+          <!-- Project Card 5 -->
+          <div class="project-card">
+              <img src="img/socialnetworkpic.png" alt="Project 5">
+              <div class="project-info">
+                  <h3>Social Network</h3>
+                  <p>A social networking site with user profiles, friend requests, and news feed functionalities.</p>
+                  <a href="#" class="btn">View Project</a>
+              </div>
+          </div>
+      </div>
+      
+      </div>
+  </div>
+</div>
+    <!-- RESUME -->
+    <div class="resume" id="resume">
+        <h2>Resume</h2>
+        <p>View or download my resume here to learn more about my skills and experience.
+           Feel free to reach out with any inquiries or opportunities.<br><span> Thank you!</span></p>
+      <a href="https://drive.google.com/file/d/1N0Z6M4HmegEPiLEzAwCqXYtSAOwDIG97/view?usp=drivesdk">  <div id="Download-btn"><input type="submit" value="Download" class="btn" /></div></a>
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <div class="contact" id="contact">
+      <h2>Contact</h2>
+        <div class="container">
+            <div class="form">
+              <div class="contact-info">
+                <h3 class="title-contact">Lets get in touch</h3>
+                <p class="text-contact">
+                  Feel free to reach out for collaborations, project discussions, or any inquiries. 
+                  I am always excited to connect and explore new opportunities together.
+                </p>
+      
+                <div class="info">
+                  <div class="information-my">
+                    <img src="img/location.png" class="icon" alt="" />
+                    <p>Bagh Road,Jobat,Dist. Alirajpur,MP,India</p>
+                  </div>
+                  <div class="information-my">
+                    <img src="img/email.png" class="icon" alt="" />
+                    <p>sachinbamniya977@gmail.com</p>
+                  </div>
+                  <div class="information-my">
+                    <img src="img/phone.png" class="icon" alt="" />
+                    <p>+91 8269617314</p>
+                  </div>
+                </div>
+      
+                <div class="social-media">
+                  <h3>Connect with me:</h3>
+                  <div class="social-icons">
+                    <a href="#">
+                      <i class="social-icon-png" id="iconji"><img src="img/twitterslogo.png" style="width: 13px; height: 13px;"></i>
+                    </a>
+                    <a href="#">
+                      <i class="social-icon-png" id="iconji"><img src="img/fblogo.png" style="width: 15px; height: 15px;"></i>
+                    </a>
+                    <a href="#">
+                      <i class="social-icon-png" id="iconji"><img src="img/iglogo.png" style="width: 15px; height: 15px;"></i>
+                    </a>
+                    <a href="#">
+                      <i class="social-icon-png" id="iconji"><img src="img/githublogo.png" style="width: 16px; height: 16px;"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="contact-form">
+                <form action="index.html" autocomplete="off">
+                  <h3 class="title-us">Contact Me</h3>
+                  <div class="input-container">
+                    <input type="text" name="name" class="input" />
+                    <label for="">Username</label>
+                    <span>Username</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="email" name="email" class="input" />
+                    <label for="">Email</label>
+                    <span>Email</span>
+                  </div>
+                  <div class="input-container">
+                    <input type="tel" name="phone" class="input" />
+                    <label for="">Phone</label>
+                    <span>Phone</span>
+                  </div>
+                  <div class="input-container textarea">
+                    <textarea name="message" class="input"></textarea>
+                    <label for="">Message</label>
+                    <span>Message</span>
+                  </div>
+                  <div class="btn-container"><input type="submit" value="Send" class="btn" /></div>
+                </form>
+              </div>
+            </div>
+          </div>
+      
+    </div>
+</body>

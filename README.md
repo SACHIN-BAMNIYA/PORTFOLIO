@@ -1,4 +1,6 @@
-# PORTFOLIO:
+# PORTFOLIO:FrontEnd
+
+NOTE: WORKING ON NEW PORTFOLIO (WORKING)
 Live: https://66eac39986732f7c2990a593--startling-entremet-87fd53.netlify.app/#
 
 MY PERSONAL PORTFOLIO
